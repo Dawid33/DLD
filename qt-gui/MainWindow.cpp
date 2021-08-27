@@ -12,6 +12,5 @@
 MainWindow::MainWindow() {
     MainTab* tab = new MainTab(this);
     tab->setSizePolicy(QSizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum));
-    auto size = tab->size();
     setCentralWidget(tab);
 }
