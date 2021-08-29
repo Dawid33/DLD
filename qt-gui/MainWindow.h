@@ -6,13 +6,13 @@
 #define DLD_MainWindow_H
 #include <QMainWindow>
 #include <QTextEdit>
+#include "CentralWidget.h"
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
 public:
     MainWindow();
-    QTextEdit *file_viewer;
-    QTextEdit *file_viewer2;
+    CentralWidget* central_widget;
 };
 
 #endif //DLD_MainWindow_H

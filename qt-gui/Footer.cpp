@@ -3,3 +3,10 @@
 //
 
 #include "Footer.h"
+#include <QTextEdit>
+#include <QLabel>
+
+Footer::Footer(QWidget *parent) : parent(parent) {
+    console = new QLabel();
+    addTab(console, "Console");
+}

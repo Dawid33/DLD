@@ -22,7 +22,7 @@ add_executable(qt-gui
     qt-gui/Main.cpp
     qt-gui/MainWindow.cpp
     qt-gui/Footer.cpp
-    qt-gui/MainTab.cpp)
+    qt-gui/CentralWidget.cpp)
 target_link_libraries(qt-gui
     Qt5::Core
     Qt5::Gui

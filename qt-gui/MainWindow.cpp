@@ -3,14 +3,13 @@
 //
 
 #include "MainWindow.h"
+#include "CentralWidget.h"
 #include <QApplication>
 #include <QWidget>
 #include <QBoxLayout>
 #include <QTextEdit>
-#include "MainTab.h"
 
 MainWindow::MainWindow() {
-    MainTab* tab = new MainTab(this);
-    tab->setSizePolicy(QSizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum));
-    setCentralWidget(tab);
+    central_widget = new CentralWidget(this);
+    setCentralWidget(central_widget);
 }
